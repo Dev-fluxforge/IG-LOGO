@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Instagram Logo Container */
+.instagram-logo {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Camera Icon */
+.camera-icon {
+    width: 120px;
+    height: 120px;
+    /* background-color: white; */
+    border: 10px solid white;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Camera Lens */
+.camera-lens {
+    width: 55px;
+    height: 55px;
+    background-color: #f7f4f4;
+    border-radius: 50%;
+}
+
+/* Small Circle in Top Right Corner */
+.camera-icon::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #f3efef;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
